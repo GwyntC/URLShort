@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "URL List";
+}
+@model List<URLModel>
+<h1>@ViewData["Title"]</h1>
+@if (User.IsInRole("Admin"))
+{
+    <p>Welcome, Administrator! You have access to admin features.</p>
+}
+else if (User.IsInRole("User"))
+{
+<p>Welcome, User! You have access to user features.</p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Long URL</th>
+            <th>Short URL</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @* Loop through the Model data using Razor syntax *@
+        @foreach (var item in Model)
+        {
+            @if(!item.IsRemoved)
+            {
+            <tr>
+                <td>@item.UrlLong</td>
+                <td>@item.Url</td>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @if(User.Identity.Name==item.User.UserName){
+                    <td><button type="button" onclick=" location.href='@Url.Action("Info", "ShortUrl",new {UrlId=item.Id})' ;return false;">Details</button>
+                            <button type="button" onclick=" location.href='@Url.Action("Remove", "ShortUrl", new { UrlId = item.Id })' ;return false;">Remove</button>
+                        </td>
+                    }
+                }
+            </tr>
+            }
+        }
+        @if (User.Identity.IsAuthenticated)
+        {
+            <tr>
+                @* <td><button type="button" onclick=" location.href='@Url.Action("ShortURLInfo", "URL")' ;return false;">Details</button><button type="button">Remove</button></td> *@
+                <td>
+                    <form asp-action="Create" asp-controller="ShortUrl" method="post">
+                        <textarea id="message" name="longUrl" rows="1"></textarea>
+                        <button type="submit">Add URL</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a class="nav-link text-dark" asp-area="" asp-controller="ShortUrl" asp-action="About">About</a>
+</div>
