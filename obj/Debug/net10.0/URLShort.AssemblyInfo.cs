@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("URLShort")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+deda7c2504282763517b73500df7de6fdb62f973")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d597ec8a92833a7a1ea2a97841bbbabe69b0b5c7")]
 [assembly: System.Reflection.AssemblyProductAttribute("URLShort")]
 [assembly: System.Reflection.AssemblyTitleAttribute("URLShort")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

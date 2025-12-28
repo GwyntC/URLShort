@@ -307,3 +307,4 @@ D:\Test\URLShort\bin\Debug\net10.0\AngularPart\package.json
 D:\Test\URLShort\bin\Debug\net10.0\AngularPart\tsconfig.app.json
 D:\Test\URLShort\bin\Debug\net10.0\AngularPart\tsconfig.json
 D:\Test\URLShort\bin\Debug\net10.0\AngularPart\tsconfig.spec.json
+D:\Test\URLShort\obj\Debug\net10.0\URLShort.sourcelink.json
