@@ -1,0 +1,15 @@
+<table *ngIf="model.length > 0; else empty" class="table">
+  <thead>
+  <tr>
+    <th>URl </th>
+    <th>URL short</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of model">
+    <td>{{ item.URL }}</td>
+    <td>{{ item.URLShort }}</td>
+  </tr>
+  </tbody>
+</table>
+<ng-template #empty>No data</ng-template>

@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model URLModel
+@{
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>NLong URL</th>
+            <th>Short URL</th>
+            <th>Creation DateL</th>
+            @if (User.IsInRole("Admin"))
+            {
+            <th>User</th>
+            }
+        </tr>
+        <tr><td>@Model.UrlLong</td><td>@Model.Url</td><td>@Model.CreationDate</td>
+            @if (User.IsInRole("Admin"))
+            {
+                <td>@Model.User.UserName</td>
+            }
+            </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
