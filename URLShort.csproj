@@ -15,4 +15,12 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="AngularPart\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="URLShort_Test"/>
+	</ItemGroup>
+
 </Project>

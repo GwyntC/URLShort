@@ -13,6 +13,6 @@ namespace URLShort.Models
         public string UserId {  get; set; }
         public DateTime CreationDate {  get; set; }
         public ApplicationUser User { get; set; } = null!;
-        public bool IsRemoved { get; set; }
+        public bool IsRemoved    { get; set; }
     }
 }

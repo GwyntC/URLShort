@@ -63,3 +63,4 @@ public static class Program
                .UseStartup<Startup>();
         });
 }
+public partial class Program { }

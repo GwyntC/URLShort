@@ -301,3 +301,9 @@ D:\Test\URLShort\bin\Debug\net10.0\web.config
 D:\Test\URLShort\bin\Debug\net10.0\web.Debug.config
 D:\Test\URLShort\bin\Debug\net10.0\web.Release.config
 D:\Test\URLShort\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\Test\URLShort\bin\Debug\net10.0\AngularPart\angular.json
+D:\Test\URLShort\bin\Debug\net10.0\AngularPart\package-lock.json
+D:\Test\URLShort\bin\Debug\net10.0\AngularPart\package.json
+D:\Test\URLShort\bin\Debug\net10.0\AngularPart\tsconfig.app.json
+D:\Test\URLShort\bin\Debug\net10.0\AngularPart\tsconfig.json
+D:\Test\URLShort\bin\Debug\net10.0\AngularPart\tsconfig.spec.json
