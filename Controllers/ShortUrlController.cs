@@ -23,7 +23,6 @@ namespace URLShort.Controllers
             List<URLModel> urlModels = _context.Urls.ToList();
             return View("Table.cshtml", urlModels);
         }
-        [Route("{*table}")]
         public IActionResult Table()
         {
             List<URLModel> urlModels = _context.Urls.Include(e => e.User).ToList();
